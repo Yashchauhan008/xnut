@@ -99,19 +99,20 @@ export default function Home() {
       <h1>Coming Soon</h1>
 
       <p className="tagline">
-        Peanut butter and plant-powered goodness, made simply from nature.
-        We&apos;re busy roasting, grinding and getting things just right.
+        Peanut butter powder — the goodness of peanuts, roasted and ground
+        into a light plant-protein powder. We&apos;re busy getting the blend
+        just right.
       </p>
 
       <div className="pills">
         <span className="pill">
-          <Peanut /> 100% Peanuts
+          <Jar /> Peanut Butter Powder
         </span>
         <span className="pill">
           <Leaf /> Plant Protein
         </span>
         <span className="pill">
-          <Jar /> Small Batches
+          <Peanut /> 100% Peanuts
         </span>
       </div>
 
