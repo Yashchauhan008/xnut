@@ -37,9 +37,9 @@ main.page {
 }
 
 .logo {
-  width: min(320px, 70vw);
+  width: min(300px, 65vw);
   height: auto;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .eyebrow {

@@ -87,9 +87,9 @@ export default function Home() {
 
       <Image
         src="/logo.png"
-        alt="xnut — plant protein logo"
-        width={320}
-        height={320}
+        alt="xnut logo"
+        width={793}
+        height={563}
         className="logo"
         priority
       />
