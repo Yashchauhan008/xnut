@@ -1,0 +1,155 @@
+:root {
+  /* Palette taken from the xnut logo */
+  --cream: #faf4ea;      /* background */
+  --caramel: #b9884f;    /* main peanut-butter brown */
+  --deep: #7e5227;       /* dark outline brown */
+  --tan: #edbf7e;        /* peanut shell tan */
+  --soft: #e9dcc8;       /* muted cream for borders */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--deep);
+  -webkit-font-smoothing: antialiased;
+}
+
+main.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  width: min(320px, 70vw);
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--caramel);
+  margin-bottom: 1.25rem;
+}
+
+.eyebrow::before,
+.eyebrow::after {
+  content: "";
+  width: 2.5rem;
+  height: 2px;
+  background-color: var(--tan);
+  border-radius: 2px;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 800;
+  color: var(--deep);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 500;
+  color: var(--caramel);
+  max-width: 34rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid var(--tan);
+  color: var(--deep);
+  background-color: var(--cream);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+}
+
+.pill svg {
+  flex-shrink: 0;
+}
+
+footer {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--caramel);
+  letter-spacing: 0.05em;
+}
+
+footer .domain {
+  color: var(--deep);
+  font-weight: 800;
+}
+
+/* Flat decorative botanicals — corners only, no gradients */
+.decor {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.decor.top-left {
+  top: -1.5rem;
+  left: -1.5rem;
+  transform: rotate(15deg);
+}
+
+.decor.bottom-right {
+  bottom: -1.5rem;
+  right: -1.5rem;
+  transform: rotate(195deg);
+}
+
+.decor.top-right {
+  top: 2rem;
+  right: 3rem;
+}
+
+.decor.bottom-left {
+  bottom: 3rem;
+  left: 3rem;
+  transform: rotate(-25deg);
+}
+
+@media (max-width: 640px) {
+  .decor.top-right,
+  .decor.bottom-left {
+    display: none;
+  }
+}
