@@ -26,6 +26,7 @@ body {
 
 main.page {
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,9 +148,90 @@ footer .domain {
   transform: rotate(-25deg);
 }
 
+/* ---------- Mobile ---------- */
 @media (max-width: 640px) {
+  main.page {
+    padding: 3rem 1.25rem 2.5rem;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    width: min(230px, 72vw);
+    margin-top: 1rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    gap: 0.45rem;
+    margin-bottom: 1rem;
+  }
+
+  .eyebrow::before,
+  .eyebrow::after {
+    width: 1.25rem;
+  }
+
+  h1 {
+    margin-bottom: 0.85rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 2rem;
+  }
+
+  .pills {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .pill {
+    width: min(240px, 80vw);
+    justify-content: center;
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+  }
+
+  /* Keep two soft branches in opposite corners, smaller and lighter */
+  .decor.top-left svg,
+  .decor.bottom-right svg {
+    width: 110px;
+    height: 110px;
+  }
+
+  .decor.top-left {
+    top: -0.75rem;
+    left: -0.75rem;
+  }
+
+  .decor.bottom-right {
+    bottom: -0.75rem;
+    right: -0.75rem;
+  }
+
+  .decor {
+    opacity: 0.55;
+  }
+
   .decor.top-right,
   .decor.bottom-left {
     display: none;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+  }
+
+  h1 {
+    font-size: 2.2rem;
   }
 }
