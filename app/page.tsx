@@ -40,6 +40,20 @@ function Peanut({ size = 20 }: { size?: number }) {
   );
 }
 
+function Drop({ size = 20 }: { size?: number }) {
+  // Flat butter-drip icon in logo browns
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M12 3 C 12 3, 5.5 11, 5.5 15.5 C 5.5 19, 8.5 21.5, 12 21.5 C 15.5 21.5, 18.5 19, 18.5 15.5 C 18.5 11, 12 3, 12 3 Z"
+        fill="#b9884f"
+        stroke="#7e5227"
+        strokeWidth="1.5"
+      />
+    </svg>
+  );
+}
+
 function Jar({ size = 20 }: { size?: number }) {
   // Flat peanut-butter jar icon
   return (
@@ -79,12 +93,19 @@ export default function Home() {
 
       <p className="tagline">
         Peanut butter powder — the goodness of peanuts, roasted and ground
-        into a light powder. We&apos;re busy getting the blend just right.
+        into a light powder. Plus classic and flavored peanut butter.
+        We&apos;re busy getting the blend just right.
       </p>
 
       <div className="pills">
         <span className="pill">
           <Jar /> Peanut Butter Powder
+        </span>
+        <span className="pill">
+          <Peanut /> Peanut Butter
+        </span>
+        <span className="pill">
+          <Drop /> Flavored Peanut Butter
         </span>
       </div>
 

@@ -10,7 +10,7 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "xnut — Peanut Butter Powder | Coming Soon",
   description:
-    "xnut.in — peanut butter powder, made from peanuts. Launching soon.",
+    "xnut.in — peanut butter powder, peanut butter and flavored peanut butter. Launching soon.",
 };
 
 export default function RootLayout({
