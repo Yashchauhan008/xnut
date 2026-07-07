@@ -40,21 +40,6 @@ function Peanut({ size = 20 }: { size?: number }) {
   );
 }
 
-function Leaf({ size = 20 }: { size?: number }) {
-  // Flat leaf icon in logo browns
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path
-        d="M12 3 C 6 8, 5 15, 12 21 C 19 15, 18 8, 12 3 Z"
-        fill="#edbf7e"
-        stroke="#7e5227"
-        strokeWidth="1.5"
-      />
-      <path d="M12 6 L 12 18" stroke="#7e5227" strokeWidth="1" strokeLinecap="round" />
-    </svg>
-  );
-}
-
 function Jar({ size = 20 }: { size?: number }) {
   // Flat peanut-butter jar icon
   return (
@@ -72,17 +57,11 @@ function Jar({ size = 20 }: { size?: number }) {
 export default function Home() {
   return (
     <main className="page">
-      <div className="decor top-left">
-        <Branch size={200} />
-      </div>
       <div className="decor bottom-right">
         <Branch size={200} />
       </div>
       <div className="decor top-right">
         <Peanut size={36} />
-      </div>
-      <div className="decor bottom-left">
-        <Leaf size={36} />
       </div>
 
       <Image
@@ -100,19 +79,12 @@ export default function Home() {
 
       <p className="tagline">
         Peanut butter powder — the goodness of peanuts, roasted and ground
-        into a light plant-protein powder. We&apos;re busy getting the blend
-        just right.
+        into a light powder. We&apos;re busy getting the blend just right.
       </p>
 
       <div className="pills">
         <span className="pill">
           <Jar /> Peanut Butter Powder
-        </span>
-        <span className="pill">
-          <Leaf /> Plant Protein
-        </span>
-        <span className="pill">
-          <Peanut /> 100% Peanuts
         </span>
       </div>
 

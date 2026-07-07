@@ -125,12 +125,6 @@ footer .domain {
   opacity: 0.9;
 }
 
-.decor.top-left {
-  top: -1.5rem;
-  left: -1.5rem;
-  transform: rotate(15deg);
-}
-
 .decor.bottom-right {
   bottom: -1.5rem;
   right: -1.5rem;
@@ -140,12 +134,6 @@ footer .domain {
 .decor.top-right {
   top: 2rem;
   right: 3rem;
-}
-
-.decor.bottom-left {
-  bottom: 3rem;
-  left: 3rem;
-  transform: rotate(-25deg);
 }
 
 /* ---------- Mobile ---------- */
@@ -197,16 +185,10 @@ footer .domain {
     padding: 0.6rem 1rem;
   }
 
-  /* Keep two soft branches in opposite corners, smaller and lighter */
-  .decor.top-left svg,
+  /* One soft branch in the bottom corner, smaller and lighter */
   .decor.bottom-right svg {
     width: 110px;
     height: 110px;
-  }
-
-  .decor.top-left {
-    top: -0.75rem;
-    left: -0.75rem;
   }
 
   .decor.bottom-right {
@@ -218,8 +200,7 @@ footer .domain {
     opacity: 0.55;
   }
 
-  .decor.top-right,
-  .decor.bottom-left {
+  .decor.top-right {
     display: none;
   }
 }
